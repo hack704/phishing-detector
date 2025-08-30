@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("background.png");
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    translate: 0 5rem;
+    font-size: 50px;
+    font-family: orbitron;
+    color: beige;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.enter{
+    all:unset;
+    border: 2px solid white;
+    width: 800px;
+    border-radius: 1rem;
+    translate: 15rem 5rem;
+    height: 30px;
+    backdrop-filter: blur(10px);
+    padding-left: 10px;
+    color: beige;
+}
+input::placeholder{
+    color: beige;
+}
+button{
+    all: unset;
+    border: 2px solid white;
+    width: 55px;
+    border-radius: 1rem;
+    height: 30px;
+    translate: 67rem 2.9rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: beige;
+}
