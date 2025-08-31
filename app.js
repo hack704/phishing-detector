@@ -23,16 +23,16 @@ btn.addEventListener("click", function () {
     }
 
     if (url.value.length > 75) {
-        alert("dangerous");
+        alert("dangerous the character limit exceeded");
     }
     else if (isDangerous) {
-         alert("dangerous");
+         alert("dangerous some unkown characters");
     }
     else if (counta > 1) {
-        alert("dangerous");
+        alert("dangerous: @ is more than once");
     }
     else if (countb > 1) {
-         alert("dangerous");
+         alert("dangerous: % is more than once");
     }
     else if (input) {
         try {
@@ -41,21 +41,22 @@ btn.addEventListener("click", function () {
             let parts =hostname.split(".");
             let tld =parts[parts.length-1];
             if(parsed.protocol!="https:"){
-                alert("dangerous");
+                alert("dangerous: https: not applied");
 
             }
             else if(tld=="com"|| tld=="in" || tld=="org"){
                 alert("safe");
             }
             else{
-                 alert("dangerous");
+                 alert("dangerous: .com or .in or .org not included");
             }
         }
         catch(e){
-             alert("dangerous");
+             alert("dangerous: domain name not correct");
         }
     }
     else {
          alert("safe");
     }
 });
+
