@@ -41,7 +41,7 @@ btn.addEventListener("click", function () {
             let parts =hostname.split(".");
             let tld =parts[parts.length-1];
             if(parsed.protocol!="https:"){
-                alert("dangerous: https: not applied");
+                alert("dangerous");
 
             }
             else if(tld=="com"|| tld=="in" || tld=="org"){
@@ -52,11 +52,12 @@ btn.addEventListener("click", function () {
             }
         }
         catch(e){
-             alert("dangerous: domain name not correct");
+             alert("dangerous: https: not applied");
         }
     }
     else {
          alert("safe");
     }
 });
+
 
